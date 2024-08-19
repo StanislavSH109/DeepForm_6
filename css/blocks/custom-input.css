@@ -4,6 +4,15 @@
   align-items: flex-start;
 }
 
+.custom-input--invalid .custom-input__field {
+  border: 1px solid red;
+}
+
+.custom-input--invalid .custom-input__error {
+  display: block;
+}
+
+
 .custom-input__box {
   display: flex;
   flex-direction: column;
@@ -32,4 +41,13 @@
   font-weight: 400;
   line-height: 20px;
   margin: 0 0 10px 0;
+}
+
+.custom-input__error {
+  color: red;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  margin: 5px 0 0 0;
+  display: none;
 }

@@ -19,9 +19,10 @@
         <fieldset class="order-form__group order-form__group--size-s">
           <legend class="order-form__group-name">Информация о пользователе</legend>
           <div class="order-form__wrapper">
-            <div class="custom-input">
+            <div class="custom-input custom-input--invalid">
               <label class="custom-input__label" for="user-name">Имя</label>
               <input class="custom-input__field" id="user-name" type="text" name="name" placeholder="Введите свое имя" required>
+              <span class="custom-input__error">Поле должно быть заполнено</span>
             </div>
             <div class="custom-input">
               <label class="custom-input__label" for="user-second-name">Отчество</label>
@@ -61,7 +62,7 @@
           </label>
         </div>
         <div class="order-form__buttons">
-          <button class="btn" type="submit" disabled>Отправить заявку</button>
+          <button class="btn" type="button">Отправить заявку</button>
           <button class="btn" type="reset">Сбросить</button>
         </div>
       </form>
