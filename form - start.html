@@ -21,17 +21,17 @@
           <div class="order-form__wrapper">
             <div class="custom-input">
               <label class="custom-input__label" for="user-name">Имя</label>
-              <input class="custom-input__field" id="user-name" type="text" name="name" placeholder="Введите свое имя">
+              <input class="custom-input__field" id="user-name" type="text" name="name" placeholder="Введите свое имя" required>
             </div>
 
             <div class="custom-input">
               <label class="custom-input__label" for="user-second-name">Отчество</label>
-              <input class="custom-input__field" id="user-name" type="text" name="name" placeholder="Введите свое имя">
+              <input class="custom-input__field" id="user-name" type="text" name="name" placeholder="Введите свое имя" required>
             </div>
 
             <div class="custom-input">
               <label class="custom-input__label" for="surname">Фамилию
-                <input class="custom-input__field" id="surname" type="text" name="name" placeholder="Введите свое имя">
+                <input class="custom-input__field" id="surname" type="text" name="name" placeholder="Введите свое имя" required>
               </label>
               
             </div>
@@ -50,7 +50,10 @@
               <input class="custom-input__field" id="user-mail" type="email" name="surname" placeholder="mail@mail.ru">
             </div>
 
-            .custom-textarea
+            <div class="custom-textarea custom-textarea--size-2">
+              <label for="comment" class="custom-textarea__label">Комментарий</label>
+              <textarea name="comment" id="comment" class="custom-textarea__field"></textarea>
+            </div>
           </div>
         </fieldset>
         <div class="custom-toggle">
@@ -64,6 +67,7 @@
         </div>
         <div class="order-form__buttons">
           <button class="btn" type="submit" disabled>Отправить заявку</button>
+          <button class="btn" type="reset" disabled>Сбросить</button>
         </div>
       </form>
     </div>
